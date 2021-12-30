@@ -13,20 +13,19 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import Navbar from "../navbar/Navbar";
+import Home from "../home/Home";
 
 const Header = () => {
   return (
     <div className="headerContainer">
-      {/* <HashRouter>
-        <Navbar />
+      <HashRouter>
         <div className="componentContainer">
           <Switch>
-            <Route path="/firstPage" component={FirstPage} />
-            <Route path="/secondPage" component={SecondPage} />
+            <Route path="/" component={Home} />
+            <Route path="/Home" component={Home} />
           </Switch>
         </div>
-      </HashRouter> */}
+      </HashRouter>
     </div>
   );
 };
